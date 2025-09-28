@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajanta Cave Paintings Storyboard: The Vessantara Jataka</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+            margin: 0;
+            padding: 20px;
+            color: #2F1B14;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 248, 220, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #8B0000 0%, #CD853F 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header h2 {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .intro {
+            padding: 30px;
+            background: rgba(255, 235, 205, 0.7);
+            border-bottom: 3px solid #D2691E;
+        }
+        
+        .intro h3 {
+            color: #8B0000;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        
+        .storyboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+        
+        .panel {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 3px solid #D2691E;
+        }
+        
+        .panel:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+        }
+        
+        .panel-header {
+            background: linear-gradient(135deg, #CD853F 0%, #F4A460 100%);
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-align: center;
+        }
+        
+        .panel-image {
+            height: 200px;
+            border-bottom: 2px solid #D2691E;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .panel-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .panel-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .panel-content {
+            padding: 20px;
+        }
+        
+        .panel-description {
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #8B4513;
+            font-size: 1.05em;
+            line-height: 1.4;
+        }
+        
+        .panel-narrative {
+            color: #2F1B14;
+            line-height: 1.6;
+            border-left: 4px solid #CD853F;
+            padding-left: 15px;
+            margin-left: 5px;
+            background: rgba(255, 248, 220, 0.5);
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+        .moral-lesson {
+            background: linear-gradient(135deg, #8B0000 0%, #CD853F 100%);
+            color: white;
+            padding: 25px;
+            margin: 30px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .conclusion {
+            padding: 30px;
+            background: rgba(255, 235, 205, 0.7);
+            text-align: center;
+            border-top: 3px solid #D2691E;
+        }
+        
+        .team-footer {
+            padding: 25px 30px;
+            background: #2F1B14;
+            color: white;
+            text-align: center;
+            border-top: 3px solid #CD853F;
+        }
+        
+        .team-footer h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+            color: #CD853F;
+        }
+        
+        .team-footer p {
+            margin: 0;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+        
+        .lotus {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1.5em;
+            color: #CD853F;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Cave Paintings Storyboard</h1>
+            <h2>The Vessantara Jataka from Ajanta Cave 17</h2>
+        </div>
+        
+        <div class="intro">
+            <h3>Historical Context</h3>
+            <p>The Ajanta caves, dating from the 2nd century BCE to 6th century CE, contain some of India's most magnificent Buddhist art. <strong>Cave 17, from the late 5th century CE, features the Vessantara Jataka</strong> - one of the most beloved tales of Prince Vessantara's ultimate act of generosity. This narrative depicts the Buddha's penultimate incarnation and illustrates the perfection of <em>dana</em> (generosity), one of Buddhism's highest virtues.</p>
+        </div>
+        
+        <div class="storyboard">
+            <div class="panel">
+                <div class="panel-header">Panel 1: The Generous Prince</div>
+                <div class="panel-image">
+                    <img src="images/prince-vessantara.jpg" alt="Prince Vessantara in his palace">
+                </div>
+                <div class="panel-content">
+                    <div class="panel-description">Prince Vessantara in his palace, known throughout the kingdom for his extraordinary generosity</div>
+                    <div class="panel-narrative">In the kingdom of Sivi, there lived Prince Vessantara, beloved by all for his boundless compassion. He possessed a magical white elephant that could bring rain to drought-stricken lands. The prince's generosity knew no bounds - he gave freely to all who asked, from the poorest beggar to traveling merchants.</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-header">Panel 2: The Sacred Gift</div>
+                <div class="panel-image">
+                    <img src="images/white-elephant.jpg" alt="Vessantara giving away the white elephant">
+                </div>
+                <div class="panel-content">
+                    <div class="panel-description">Vessantara gives away the precious white elephant to Brahmins from a neighboring kingdom</div>
+                    <div class="panel-narrative">When Brahmins from the drought-afflicted kingdom of Kalinga came seeking the magical elephant, Vessantara did not hesitate. Despite knowing it would anger his people, he gifted the sacred creature that protected his own kingdom's prosperity. His act of supreme generosity would change everything.</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-header">Panel 3: The Royal Decree</div>
+                <div class="panel-image">
+                    <img src="images/royal-decree.jpg" alt="Angry citizens demanding exile">
+                </div>
+                <div class="panel-content">
+                    <div class="panel-description">The outraged citizens demand the king exile his son for endangering the kingdom</div>
+                    <div class="panel-narrative">The people, fearing for their kingdom's future without the rain-bringing elephant, demanded justice. With a heavy heart, King Sanjaya was forced to exile his beloved son. The court wept, but the king's duty to his subjects came first. Vessantara accepted his fate with serene dignity.</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-header">Panel 4: The Forest Exile</div>
+                <div class="panel-image">
+                    <img src="images/forest-journey.jpg" alt="Family traveling to forest exile">
+                </div>
+                <div class="panel-content">
+                    <div class="panel-description">Vessantara, his wife Maddi, and their two children journey to Mount Vamka for exile</div>
+                    <div class="panel-narrative">Accompanied by his devoted wife Maddi and their two young children - Jali and Kanhajina - Vessantara traveled to the remote Mount Vamka. Even during this journey of exile, he continued his generous ways, giving away their royal chariot and horses to anyone who asked.</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-header">Panel 5: The Hermitage</div>
+                <div class="panel-image">
+                    <img src="images/hermitage.jpg" alt="Family living in forest hermitage">
+                </div>
+                <div class="panel-content">
+                    <div class="panel-description">The family establishes a simple hermitage in the forest, living in peaceful meditation</div>
+                    <div class="panel-narrative">In the serene wilderness, the royal family built a humble hermitage. They lived simply, surviving on forest fruits and roots. Vessantara spent his days in meditation and teaching, while Maddi cared for their children. Their love and devotion remained unshaken by their reduced circumstances.</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-header">Panel 6: The Ultimate Test</div>
+                <div class="panel-image">
+                    <img src="images/brahmin-jujaka.jpg" alt="Brahmin Jujaka approaching Vessantara">
+                </div>
+                <div class="panel-content">
+                    <div class="panel-description">The old Brahmin Jujaka arrives, demanding Vessantara's children as servants</div>
+                    <div class="panel-narrative">One fateful day, while Maddi was gathering food, an old Brahmin named Jujaka approached Vessantara. Sent by the gods to test the prince's ultimate generosity, he demanded the two children as servants for his young wife. This request would test the very limits of sacrificial love.</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-header">Panel 7: The Supreme Sacrifice</div>
+                <div class="panel-image">
+                    <img src="images/children-sacrifice.jpg" alt="Vessantara giving away his children">
+                </div>
+                <div class="panel-content">
+                    <div class="panel-description">With tears in his eyes, Vessantara gives away his beloved children</div>
+                    <div class="panel-narrative">In the most heart-wrenching moment, Vessantara poured water over the Brahmin's hands, formally gifting his precious children. Though his heart broke, his commitment to perfect generosity remained absolute. The children, understanding their father's noble nature, accepted their fate with remarkable courage.</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-header">Panel 8: Maddi's Return</div>
+                <div class="panel-image">
+                    <img src="images/maddi-grief.jpg" alt="Maddi discovering children are gone">
+                </div>
+                <div class="panel-content">
+                    <div class="panel-description">Maddi returns to find their children gone and faints from grief</div>
+                    <div class="panel-narrative">When Maddi returned and discovered what had transpired, she collapsed in overwhelming grief. Yet, understanding her husband's spiritual path and the necessity of his actions, she found strength in their shared faith. Her love for Vessantara transcended even maternal anguish.</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-header">Panel 9: Indra's Final Test</div>
+                <div class="panel-image">
+                    <img src="images/indra-test.jpg" alt="Indra disguised as Brahmin testing Vessantara">
+                </div>
+                <div class="panel-content">
+                    <div class="panel-description">The god Indra, disguised as a Brahmin, asks for Maddi herself</div>
+                    <div class="panel-narrative">To complete the ultimate test of generosity, Indra himself appeared disguised as a Brahmin, requesting Maddi as a gift. Without hesitation, Vessantara prepared to give away even his beloved wife. This moment represents the pinnacle of selfless giving - the complete transcendence of personal attachment.</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-header">Panel 10: Divine Revelation</div>
+                <div class="panel-image">
+                    <img src="images/divine-revelation.jpg" alt="Indra revealing his true form">
+                </div>
+                <div class="panel-content">
+                    <div class="panel-description">Indra reveals his true identity and restores Maddi to Vessantara</div>
+                    <div class="panel-narrative">Moved by Vessantara's perfect generosity, Indra revealed his divine nature and immediately returned Maddi to her husband. The god proclaimed that such perfect virtue had never been witnessed. The couple's joy at reunion was matched only by their understanding of the spiritual significance of this test.</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-header">Panel 11: The Royal Rescue</div>
+                <div class="panel-image">
+                    <img src="images/king-rescue.jpg" alt="King Sanjaya rescuing the children">
+                </div>
+                <div class="panel-content">
+                    <div class="panel-description">King Sanjaya, learning of his grandchildren's fate, rescues them</div>
+                    <div class="panel-narrative">Meanwhile, King Sanjaya encountered the old Brahmin with the children on the road to the slave market. Recognizing his grandchildren, the king purchased them back for a vast sum of gold coins. The children's ordeal was over, and they were restored to royal comfort and love.</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-header">Panel 12: Triumphant Return</div>
+                <div class="panel-image">
+                    <img src="images/triumphant-return.jpg" alt="Royal family returning home in triumph">
+                </div>
+                <div class="panel-content">
+                    <div class="panel-description">The royal family reunites as Vessantara returns home in triumph</div>
+                    <div class="panel-narrative">King Sanjaya, now understanding the profound spiritual achievement of his son, welcomed the family back with great celebration. Vessantara's perfect generosity had not only proven his spiritual worthiness but had also brought blessings upon the entire kingdom. The people recognized his greatness and welcomed their future king.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="moral-lesson">
+            <h3>🪷 The Eternal Teaching 🪷</h3>
+            <p>The Vessantara Jataka teaches us that true generosity requires the complete transcendence of personal attachment. Prince Vessantara's willingness to sacrifice everything - kingdom, comfort, children, and even his beloved wife - demonstrates the Buddhist ideal of <em>dana paramita</em> (the perfection of giving). This tale reminds us that spiritual growth often demands letting go of what we hold most dear, and that such sacrifice, when made with pure heart, brings ultimate liberation and joy.</p>
+        </div>
+        
+        <div class="conclusion">
+            <h3>Artistic Legacy</h3>
+            <p><span class="lotus">🪷</span> The Ajanta cave paintings transform these ancient tales into visual poetry, using vibrant earth pigments and masterful technique to convey timeless spiritual truths. Each scene in Cave 17 demonstrates the artists' profound understanding of both Buddhist philosophy and human emotion, creating a narrative that continues to inspire viewers over 1,500 years later. <span class="lotus">🪷</span></p>
+        </div>
+        
+        <div class="team-footer">
+            <h4>Team Members:</h4>
+            <p>Neeraj Nair (RA23110030110120), Vipul Gupta (RA23110030110126), Aryan Gupta (RA23110030110136), Alika Kumar Sai Teja (RA23110030110137)</p>
+        </div>
+    </div>
+</body>
+</html>
